@@ -1,0 +1,21 @@
+
+public class Main
+{
+    public static boolean isPalindrome(String word){
+        char[] arr = word.toCharArray();
+		int strt = 0;
+		int end = arr.length -1;
+		while(strt < end){
+		    if(arr[strt]!=arr[end]){
+		       return false; 
+		    }
+		    strt++;
+		    end--;
+		}
+		return true;
+    }
+	public static void main(String[] args) {
+		String word = new String("madam");
+		System.out.println(isPalindrome(word));
+	}
+}
